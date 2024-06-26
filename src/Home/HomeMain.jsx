@@ -1,8 +1,8 @@
 import WelcomeSection from "./WelcomeSection";
 import ProjectSection from "./ProjectSection";
 import ClosingSection from "./ClosingSection";
-import Footer from "../Footer";
-import Navbar from "../Navbar";
+import Footer from "../component/Footer";
+import Navbar from "../component/Navbar";
 export default function HomeMain() {
   return (
     <>

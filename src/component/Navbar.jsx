@@ -7,9 +7,9 @@ export default function Navbar() {
           <span className="font-black">DENDYPORTO </span>&#169;2024
         </p>
         <div className="flex gap-x-10">
-          <NavLink>About</NavLink>
-          <NavLink>About</NavLink>
-          <NavLink>About</NavLink>
+          <NavLink to="/about">About</NavLink>
+          <NavLink>Project</NavLink>
+          <NavLink>Contact</NavLink>
         </div>
       </div>
     </div>
