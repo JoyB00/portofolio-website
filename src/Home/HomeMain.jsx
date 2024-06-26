@@ -6,10 +6,12 @@ import Navbar from "../Navbar";
 export default function HomeMain() {
   return (
     <>
-      {/* <Navbar /> */}
-      <WelcomeSection />
-      <ProjectSection />
-      <ClosingSection />
+      <Navbar />
+      <div className="px-6">
+        <WelcomeSection />
+        <ProjectSection />
+        <ClosingSection />
+      </div>
       <Footer />
     </>
   );

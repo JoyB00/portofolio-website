@@ -5,7 +5,7 @@ import Navbar from "../Navbar";
 const WelcomeSection = () => {
   return (
     <>
-      <div className="pt">
+      <div className="pt-24">
         <div className="mb-4 flex justify-center">
           <div className="flex h-24 w-24 items-center justify-center rounded-full bg-violet-200 shadow-2xl shadow-violet-500">
             <img src={Avatar} alt="Avatar" className="h-20 w-20" />
