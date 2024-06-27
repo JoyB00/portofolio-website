@@ -2,20 +2,9 @@ import React from "react";
 import Avatar from "../assets/avatar.png";
 import MarqueeSlider from "../component/MarqueeSlider";
 import { motion } from "framer-motion";
+import { VerticalPanUP } from "../lib/Animation";
+import { VerticalPanDown } from "../lib/Animation";
 const WelcomeSection = () => {
-  const VerticalPanUP = {
-    initial: { opacity: 0, y: 30 },
-    animate: { opacity: 1, y: 0 },
-    exit: { opacity: 0, y: -10 },
-    transition: { duration: 1 },
-  };
-  const VerticalPanDown = {
-    initial: { opacity: 0, y: -30 },
-    animate: { opacity: 1, y: 0 },
-    exit: { opacity: 0, y: -10 },
-    transition: { duration: 1 },
-  };
-
   return (
     <>
       <div className="pt-32 lg:pt-52">
