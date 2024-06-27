@@ -1,14 +1,20 @@
 const VerticalPanUP = {
-  initial: { opacity: 0, y: 30 },
-  animate: { opacity: 1, y: 0 },
+  hidden: { opacity: 0, y: 30 },
+  visible: { opacity: 1, y: 0 },
   exit: { opacity: 0, y: -10 },
-  transition: { duration: 1 },
+  transition: { duration: 0.5 },
 };
 const VerticalPanDown = {
-  initial: { opacity: 0, y: -30 },
-  animate: { opacity: 1, y: 0 },
+  hidden: { opacity: 0, y: -30 },
+  visible: { opacity: 1, y: 0 },
   exit: { opacity: 0, y: -10 },
-  transition: { duration: 1 },
+  transition: { duration: 0.5 },
+};
+const Fade = {
+  hidden: { opacity: 0 },
+  visible: { opacity: 1 },
+  exit: { opacity: 0 },
+  transition: { duration: 1.5 },
 };
 const HorizontalPanRight = {
   initial: { opacity: 0, x: -30 },
@@ -28,4 +34,5 @@ export {
   VerticalPanUP,
   HorizontalPanRight,
   HorizontalPanLeft,
+  Fade,
 };

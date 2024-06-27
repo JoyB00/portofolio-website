@@ -10,8 +10,8 @@ export default function Navbar() {
         </NavLink>
         <div className="flex gap-x-10">
           <NavLink to="/about">About</NavLink>
-          <NavLink>Project</NavLink>
-          <NavLink>Contact</NavLink>
+          {/* <NavLink>Project</NavLink> */}
+          <NavLink to="/contact">Contact</NavLink>
         </div>
       </div>
     </div>

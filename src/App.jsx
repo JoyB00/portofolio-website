@@ -4,9 +4,9 @@ import viteLogo from "/vite.svg";
 import "./App.css";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import HomeRoot from "./root/HomeRoot";
-import HomeMain from "./Home/HomeMain";
-import MainAbout from "./About/MainAbout";
-
+import HomeMain from "./page/Home/HomeMain";
+import MainAbout from "./page/About/MainAbout";
+import MainContact from "./page/Contact/MainContact";
 
 const router = createBrowserRouter([
   {
@@ -20,6 +20,10 @@ const router = createBrowserRouter([
       {
         path: "about",
         element: <MainAbout />,
+      },
+      {
+        path: "contact",
+        element: <MainContact />,
       },
     ],
   },

@@ -2,7 +2,7 @@ import { Outlet } from "react-router-dom";
 
 export default function HomeRoot() {
   return (
-    <div className="w-full">
+    <div className="min-h-full">
       <Outlet />
     </div>
   );
