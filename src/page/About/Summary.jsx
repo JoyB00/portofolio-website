@@ -19,14 +19,14 @@ export default function Summary() {
         <div className="col-span-1">
           <AnimateContainer>
             <motion.div
-              className="w-full rounded-2xl lg:pe-6 lg:ps-8"
+              className="flex w-full justify-start rounded-2xl lg:justify-center lg:pe-6 lg:ps-8"
               variants={VerticalPanUP}
             >
               <LazyLoadImage
                 effect="blur"
                 src={Profile}
                 alt="profile.jpg"
-                className="h-[29rem] w-full rounded-2xl object-cover shadow-2xl shadow-violet-700"
+                className="h-72 w-full rounded-2xl object-cover shadow-2xl shadow-violet-700 lg:h-[29rem]"
               />
             </motion.div>
           </AnimateContainer>
@@ -42,19 +42,19 @@ export default function Summary() {
               </motion.p>
               <motion.h1
                 variants={VerticalPanUP}
-                className="inline-block bg-gradient-to-r from-sky-500 to-indigo-500 bg-clip-text pt-4 font-semibold text-transparent"
+                className="inline-block bg-gradient-to-r from-sky-500 to-indigo-500 bg-clip-text pt-2 text-4xl font-semibold text-transparent lg:pt-4 lg:text-6xl"
               >
                 I Kadek Dendy Pramartha
               </motion.h1>
               <motion.h1
                 variants={VerticalPanUP}
-                className="inline-block bg-gradient-to-r from-sky-500 to-indigo-500 bg-clip-text pb-4 text-lg font-normal text-transparent"
+                className="inline-block bg-gradient-to-r from-sky-500 to-indigo-500 bg-clip-text pb-4 text-sm font-normal text-transparent lg:text-lg"
               >
                 Full Stack Web Developer, Content Creation, Editor
               </motion.h1>
               <motion.p
                 variants={VerticalPanUP}
-                className="text-violet-200 opacity-70"
+                className="text-xs text-violet-200 opacity-70 lg:text-sm"
               >
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius
                 veritatis ipsa nulla hic recusandae, inventore dolorum impedit!
@@ -71,25 +71,25 @@ export default function Summary() {
             {...HorizontalPanLeft}
             className="flex justify-start gap-x-6 pt-6"
           >
-            <NavLink>
+            <NavLink to="https://www.instagram.com/dendypramartha_">
               <FontAwesomeIcon
                 icon={faInstagramSquare}
                 size="2x"
-                className="text-violet-700"
+                className="text-violet-700 hover:text-violet-400"
               />
             </NavLink>
-            <NavLink>
+            <NavLink to="https://www.linkedin.com/in/dendypramartha">
               <FontAwesomeIcon
                 icon={faLinkedin}
                 size="2x"
-                className="text-violet-700"
+                className="text-violet-700 hover:text-violet-400"
               />
             </NavLink>
-            <NavLink>
+            <NavLink to="https://github.com/JoyB00">
               <FontAwesomeIcon
                 icon={faGithub}
                 size="2x"
-                className="text-violet-700"
+                className="text-violet-700 hover:text-violet-400"
               />
             </NavLink>
           </motion.div>

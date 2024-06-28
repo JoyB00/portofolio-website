@@ -2,10 +2,10 @@ import Marquee from "react-fast-marquee";
 export default function CardProject() {
   return (
     <>
-      <div className="h-96 rounded-2xl bg-violet-900">
+      <div className="h-48 rounded-2xl bg-violet-900 lg:h-96">
         <Marquee direction="right">
-          <div className="mt-28">
-            <h1>Dendy</h1>
+          <div className="mt-14 lg:mt-28">
+            <h1 className="text-2xl lg:text-6xl">Dendy</h1>
           </div>
         </Marquee>
       </div>
@@ -13,7 +13,7 @@ export default function CardProject() {
         <h1 className="text-lg font-semibold">Project Temp</h1>
         <p>Github</p>
       </div>
-      <p className="text-justify text-violet-200 opacity-70">
+      <p className="text-justify text-xs text-violet-200 opacity-70 lg:text-sm">
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati illo
         blanditiis amet delectus nisi tempore, pariatur autem iusto distinctio
         esse placeat inventore repudiandae maiores, non reiciendis magni

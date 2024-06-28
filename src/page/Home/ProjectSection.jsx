@@ -1,11 +1,11 @@
 import AnimateContainer from "../../component/AnimateContainer";
 import CardProject from "../../component/CardProject";
-import { animate, motion } from "framer-motion";
+import { motion } from "framer-motion";
 import { VerticalPanUP } from "../../lib/Animation";
 export default function ProjectSection() {
   return (
     <AnimateContainer>
-      <div className="mt-32 lg:mx-52">
+      <div className="mt-10 lg:mx-52 lg:mt-32">
         <motion.h1
           variants={VerticalPanUP}
           className="py-6 text-start text-3xl font-semibold lg:text-6xl"

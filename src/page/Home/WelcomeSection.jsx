@@ -4,6 +4,7 @@ import MarqueeSlider from "../../component/MarqueeSlider";
 import { motion } from "framer-motion";
 import { Fade, VerticalPanUP } from "../../lib/Animation";
 import { VerticalPanDown } from "../../lib/Animation";
+import { NavLink } from "react-router-dom";
 import AnimateContainer from "../../component/AnimateContainer";
 const WelcomeSection = () => {
   return (
@@ -14,7 +15,6 @@ const WelcomeSection = () => {
           <div className="absolute right-4 top-0 h-3 w-3 rounded-full bg-gradient-to-r from-sky-500 to-indigo-500 lg:right-48 lg:h-7 lg:w-7"></div>
           <div className="absolute right-4 top-[27rem] h-2 w-2 rounded-full bg-gradient-to-r from-purple-500 to-pink-500 lg:right-28 lg:h-4 lg:w-4"></div>
           <div className="absolute top-[25rem] h-2 w-2 rounded-full bg-gradient-to-r from-yellow-500 to-orange-500 lg:left-48 lg:h-4 lg:w-4"></div>
-          {/* Add more circles as needed */}
         </motion.div>
         <div className="mb-8 flex justify-center">
           <motion.div
@@ -46,19 +46,24 @@ const WelcomeSection = () => {
             minima expedita reiciendis
           </motion.p>
         </div>
-        <motion.button
-          variants={VerticalPanUP}
-          className="mt-8 rounded-3xl bg-violet-700 hover:shadow-2xl hover:shadow-violet-500"
-        >
-          Curriculum Vitae
-        </motion.button>
+        <NavLink to="/about">
+          <motion.button
+            variants={VerticalPanUP}
+            className="mt-8 rounded-3xl bg-violet-700 text-white hover:shadow-2xl hover:shadow-violet-500"
+          >
+            Get in touch
+          </motion.button>
+        </NavLink>
         <motion.div
           initial={{ opacity: 0, x: -30 }}
           animate={{ opacity: 1, x: 0 }}
           exit={{ opacity: 0, x: -10 }}
           transition={{ duration: 1 }}
-          className="mt-32 md:mx-24 lg:mx-48"
+          className="mt-16 md:mx-24 lg:mx-48 lg:mt-32"
         >
+          <h1 className="pb-4 text-sm font-semibold text-violet-500">
+            Confidence with:
+          </h1>
           <MarqueeSlider />
         </motion.div>
       </div>
