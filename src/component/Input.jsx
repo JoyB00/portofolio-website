@@ -8,7 +8,7 @@ export default function Input({ label, id, type, props }) {
         {label}
       </label>
       <input
-        class="focus:shadow-outline w-full appearance-none rounded-2xl border px-5 py-4 leading-tight text-gray-700 shadow focus:outline-none"
+        class="focus:shadow-outline w-full appearance-none rounded-2xl border px-5 py-4 leading-tight text-white shadow focus:outline-none"
         id={id}
         name={id}
         type={type}

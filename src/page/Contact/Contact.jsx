@@ -9,6 +9,7 @@ import emailjs from "@emailjs/browser";
 import Input from "../../component/Input";
 import TextArea from "../../component/TextArea";
 import AnimateContainer from "../../component/AnimateContainer";
+
 export default function Contact() {
   const form = useRef();
 
@@ -29,7 +30,7 @@ export default function Contact() {
       );
   };
   return (
-    <div className="pt-32 lg:mx-44 lg:pt-52">
+    <div className="pt-32 lg:mx-44 lg:pt-44">
       <div className="grid grid-cols-1 gap-8 lg:grid-cols-2">
         <div className="col-span-1">
           <AnimateContainer>
@@ -41,7 +42,7 @@ export default function Contact() {
                 effect="blur"
                 src={Profile}
                 alt="profile.jpg"
-                className="h-72 w-full rounded-2xl object-cover shadow-2xl shadow-violet-700 lg:h-[29rem]"
+                className="h-72 w-full rounded-2xl object-cover shadow-2xl shadow-violet-700 lg:h-[35rem]"
               />
             </motion.div>
           </AnimateContainer>

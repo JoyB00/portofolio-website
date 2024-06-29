@@ -12,9 +12,19 @@ import { VerticalPanDown } from "../../lib/Animation";
 import { VerticalPanUP } from "../../lib/Animation";
 import { HorizontalPanLeft } from "../../lib/Animation";
 import AnimateContainer from "../../component/AnimateContainer";
+import CV from "../../assets/techStack/BLANGKO PIKET.pdf";
 export default function Summary() {
+  const onButtonClick = () => {
+    const pdfUrl = CV;
+    const link = document.createElement("a");
+    link.href = pdfUrl;
+    link.download = "BLANGKO PIKET.pdf"; // specify the filename
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
   return (
-    <div className="pt-32 lg:mx-44 lg:pt-52">
+    <div className="pt-32 lg:me-60 lg:ms-44 lg:pt-44">
       <div className="grid grid-cols-1 gap-8 lg:grid-cols-2">
         <div className="col-span-1">
           <AnimateContainer>
@@ -42,7 +52,7 @@ export default function Summary() {
               </motion.p>
               <motion.h1
                 variants={VerticalPanUP}
-                className="inline-block bg-gradient-to-r from-sky-500 to-indigo-500 bg-clip-text pt-2 text-4xl font-semibold text-transparent lg:pt-4 lg:text-6xl"
+                className="inline-block bg-gradient-to-r from-sky-500 to-indigo-500 bg-clip-text pt-2 text-4xl font-bold text-transparent lg:pt-4 lg:text-5xl"
               >
                 I Kadek Dendy Pramartha
               </motion.h1>
@@ -54,7 +64,7 @@ export default function Summary() {
               </motion.h1>
               <motion.p
                 variants={VerticalPanUP}
-                className="text-xs text-violet-200 opacity-70 lg:text-sm"
+                className="text-xs font-medium text-violet-200 lg:text-sm"
               >
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius
                 veritatis ipsa nulla hic recusandae, inventore dolorum impedit!
@@ -75,27 +85,30 @@ export default function Summary() {
               <FontAwesomeIcon
                 icon={faInstagramSquare}
                 size="2x"
-                className="text-violet-700 hover:text-violet-400"
+                className="text-violet-500 hover:text-violet-400"
               />
             </NavLink>
             <NavLink to="https://www.linkedin.com/in/dendypramartha">
               <FontAwesomeIcon
                 icon={faLinkedin}
                 size="2x"
-                className="text-violet-700 hover:text-violet-400"
+                className="text-violet-500 hover:text-violet-400"
               />
             </NavLink>
             <NavLink to="https://github.com/JoyB00">
               <FontAwesomeIcon
                 icon={faGithub}
                 size="2x"
-                className="text-violet-700 hover:text-violet-400"
+                className="text-violet-500 hover:text-violet-400"
               />
             </NavLink>
           </motion.div>
           <motion.div {...HorizontalPanLeft} className="flex justify-start">
-            <button className="mt-8 rounded-2xl border-violet-700 bg-transparent text-violet-600 hover:border-transparent hover:bg-violet-700 hover:text-white hover:shadow-2xl hover:shadow-violet-500">
-              Curriculum Vitae
+            <button
+              className="mt-8 rounded-2xl border-violet-600 bg-transparent text-violet-400 hover:border-transparent hover:bg-violet-700 hover:text-white hover:shadow-2xl hover:shadow-violet-500"
+              onClick={onButtonClick}
+            >
+              Curriculum Vitae 📖
             </button>
           </motion.div>
         </div>

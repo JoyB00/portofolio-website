@@ -9,7 +9,7 @@ import AnimateContainer from "../../component/AnimateContainer";
 const WelcomeSection = () => {
   return (
     <AnimateContainer>
-      <div className="pt-32 lg:pt-52">
+      <div className="z-10 pt-32 lg:pt-52">
         <motion.div variants={VerticalPanUP} className="relative">
           <div className="absolute top-10 h-4 w-4 rounded-full bg-gradient-to-r from-violet-500 to-fuchsia-500 lg:left-28 lg:h-9 lg:w-9"></div>
           <div className="absolute right-4 top-0 h-3 w-3 rounded-full bg-gradient-to-r from-sky-500 to-indigo-500 lg:right-48 lg:h-7 lg:w-7"></div>
@@ -51,7 +51,7 @@ const WelcomeSection = () => {
             variants={VerticalPanUP}
             className="mt-8 rounded-3xl bg-violet-700 text-white hover:shadow-2xl hover:shadow-violet-500"
           >
-            Get in touch
+            Get in touch 👋
           </motion.button>
         </NavLink>
         <motion.div
@@ -59,7 +59,7 @@ const WelcomeSection = () => {
           animate={{ opacity: 1, x: 0 }}
           exit={{ opacity: 0, x: -10 }}
           transition={{ duration: 1 }}
-          className="mt-16 md:mx-24 lg:mx-48 lg:mt-32"
+          className="mt-16 md:mx-24 lg:mx-48 lg:mt-24"
         >
           <h1 className="pb-4 text-sm font-semibold text-violet-500">
             Confidence with:

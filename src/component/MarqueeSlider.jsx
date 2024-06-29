@@ -6,11 +6,13 @@ import { MySkills } from "../lib/TechStack";
 export default function MarqueeSlider() {
   return (
     <Marquee
+      pauseOnHover
       pauseOnClick
       speed={160}
-      // gradient
-      // gradientColor={"black"}
-      // gradientWidth={10}
+      gradient
+      gradientColor={"black"}
+      gradientWidth={50}
+      style={{ padding: 0, margin: 0 }}
     >
       {console.log(MySkills)}
       {MySkills.map((item, index) => {

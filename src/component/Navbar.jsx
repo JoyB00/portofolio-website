@@ -1,11 +1,26 @@
 import { faBars, faHamburger } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { NavLink } from "react-router-dom";
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [navbar, setNavbar] = useState(false);
+  const changeBackground = () => {
+    if (window.scrollY >= 40) {
+      // console.log(window.scrollY);
+      setNavbar(true);
+    } else {
+      setNavbar(false);
+    }
+  };
+  useEffect(() => {
+    changeBackground();
+    window.addEventListener("scroll", changeBackground);
+  });
   return (
-    <div className="fixed z-10 w-full bg-black/50 p-4 backdrop-blur-xl">
+    <div
+      className={`fixed z-10 w-full ${navbar ? "bg-black/50" : "bg-transparent"} p-4 backdrop-blur-xl`}
+    >
       <div className="flex items-center justify-between px-4 sm:justify-around">
         <NavLink to="/" className="text-white">
           <p className="text-start">

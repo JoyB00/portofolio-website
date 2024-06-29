@@ -93,6 +93,10 @@ const MySkills = [
     title: "Adobe After Effect",
   },
   {
+    icon: After_Effect,
+    title: "Adobe Lightroom",
+  },
+  {
     icon: Github,
     title: "Github",
   },
@@ -177,6 +181,10 @@ const ForEditing = [
   {
     icon: After_Effect,
     title: "Adobe After Effect",
+  },
+  {
+    icon: After_Effect,
+    title: "Adobe Lightroom",
   },
 ];
 
