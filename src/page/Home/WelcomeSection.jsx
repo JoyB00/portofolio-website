@@ -19,9 +19,13 @@ const WelcomeSection = () => {
         <div className="mb-8 flex justify-center">
           <motion.div
             variants={VerticalPanUP}
-            className="flex h-24 w-24 items-center justify-center rounded-full bg-violet-200 shadow-2xl shadow-violet-500"
+            className="flex h-24 w-24 items-center justify-center rounded-full bg-violet-200"
           >
-            <img src={Avatar} alt="Avatar" className="h-20 w-20" />
+            <img
+              src={Avatar}
+              alt="Avatar"
+              className="h-full w-full rounded-full object-cover shadow-2xl shadow-violet-500"
+            />
           </motion.div>
         </div>
         <div className="lg:mx-52">

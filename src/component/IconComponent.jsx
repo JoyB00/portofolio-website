@@ -1,13 +1,15 @@
 export default function IconComponent({ icon, title }) {
   return (
     <>
-      <div className="flex h-12 items-center justify-center rounded-full border-2 border-violet-500/60 p-2 opacity-80 lg:h-16">
-        {/* <img
+      <div className="h-full rounded-2xl border-2 border-violet-500/60 p-2 opacity-80 hover:bg-violet-200/10">
+        <img
           src={icon}
           alt={title}
-          className="h-10 w-10 rounded-full border-2 border-violet-400/60 object-fill p-2 lg:h-16 lg:w-16"
-        /> */}
-        <h1 className="px-4 text-lg font-semibold lg:text-2xl">{title}</h1>
+          className="mx-auto h-12 w-12 object-cover p-2 lg:h-16 lg:w-16"
+        />
+        <h1 className="px-2 text-sm font-semibold text-violet-300 lg:px-4 lg:text-xl">
+          {title}
+        </h1>
       </div>
     </>
   );

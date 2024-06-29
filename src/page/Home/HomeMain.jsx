@@ -9,13 +9,13 @@ export default function HomeMain() {
   return (
     <>
       <div className="relative min-h-screen overflow-hidden">
-        <video
+        {/* <video
           src={OverlayVid}
           autoPlay
           loop
           muted
           className="absolute left-0 top-0 h-full w-full object-cover opacity-40"
-        />
+        /> */}
         <div className="relative z-10">
           <Navbar />
           <div className="px-6">

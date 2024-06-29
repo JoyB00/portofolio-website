@@ -2,6 +2,7 @@ import AnimateContainer from "../../component/AnimateContainer";
 import CardProject from "../../component/CardProject";
 import { motion } from "framer-motion";
 import { VerticalPanDown, VerticalPanUP } from "../../lib/Animation";
+
 export default function ProjectSection() {
   return (
     <AnimateContainer>
@@ -10,7 +11,7 @@ export default function ProjectSection() {
           variants={VerticalPanUP}
           className="pt-4 text-start text-3xl font-semibold lg:text-5xl"
         >
-          Highlight Projects 🔥
+          My Projects 🔥
         </motion.h1>
         <motion.p
           variants={VerticalPanDown}
@@ -19,15 +20,13 @@ export default function ProjectSection() {
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae
           placeat voluptates similique, itaque consequatur mollitia fuga
         </motion.p>
-        <div className="grid grid-cols-1 gap-6 md:grid-cols-2 md:gap-6">
+        <div className="grid grid-cols-1 gap-6 md:grid-cols-2 md:gap-x-6 md:gap-y-10">
           <motion.div variants={VerticalPanUP} className="md:col-span-1">
             <CardProject />
           </motion.div>
           <motion.div variants={VerticalPanUP} className="md:col-span-1">
             <CardProject />
           </motion.div>
-        </div>
-        <div className="mt-6 grid grid-cols-1 gap-6 md:grid-cols-2 md:gap-6">
           <motion.div variants={VerticalPanUP} className="md:col-span-1">
             <CardProject />
           </motion.div>
