@@ -19,7 +19,9 @@ export default function MainContact() {
           <div className="flex-1 px-6 pb-6">
             <Contact />
           </div>
-          <Footer />
+          <div className="px-6 lg:px-24">
+            <Footer />
+          </div>
         </div>
       </div>
     </div>
