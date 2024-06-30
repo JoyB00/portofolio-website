@@ -36,7 +36,7 @@ export default function Summary() {
                 effect="blur"
                 src={Profile}
                 alt="profile.jpg"
-                className="h-56 w-full rounded-2xl object-cover shadow-2xl shadow-violet-700 lg:h-[29rem]"
+                className="h-56 w-full rounded-2xl object-cover shadow-2xl shadow-violet-700 lg:h-[27rem]"
               />
             </motion.div>
           </AnimateContainer>

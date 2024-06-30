@@ -18,8 +18,7 @@ export default function ProjectSection() {
           variants={VerticalPanDown}
           className="pb-4 text-left text-xs text-violet-200/70 lg:py-4 lg:text-lg"
         >
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae
-          placeat voluptates similique, itaque consequatur mollitia fuga
+          Here are some of the impactful projects I've successfully completed!
         </motion.p>
         <div className="grid grid-cols-1 gap-8 md:grid-cols-2 md:gap-x-8 md:gap-y-16">
           {MyProject.map((item) => {
