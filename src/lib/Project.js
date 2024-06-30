@@ -22,14 +22,14 @@ const MyProject = [
     img: AtmaKitchen,
     description:
       "Atma Kitchen is a versatile multiplatform application, available on both website and mobile, designed to provide users with a seamless and delightful bakery shopping experience. With a user-friendly interface and visually appealing design, Atma Kitchen makes browsing and purchasing bakery products effortless and enjoyable",
-    link: "hhttps://github.com/JoyB00/atma_kitchen.git",
+    link: "https://github.com/JoyB00/atma_kitchen.git",
   },
   {
     title: "Portofolio Website",
     img: Porto,
     description:
       "Welcome to Dendy Porto, the ultimate showcase of my creative portfolio. Let's collaborate and create something extraordinary together! Whether you have a specific project in mind or just want to brainstorm possibilities, I'm excited to work with you. Reach out today, and let's make your vision a reality.",
-    link: "hhttps://github.com/JoyB00/portofolio-website.git",
+    link: "https://github.com/JoyB00/portofolio-website.git",
   },
 ];
 
