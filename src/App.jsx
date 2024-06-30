@@ -7,6 +7,7 @@ import HomeRoot from "./root/HomeRoot";
 import HomeMain from "./page/Home/HomeMain";
 import MainAbout from "./page/About/MainAbout";
 import MainContact from "./page/Contact/MainContact";
+import { Toaster } from "react-hot-toast";
 
 const router = createBrowserRouter([
   {
@@ -30,7 +31,12 @@ const router = createBrowserRouter([
 ]);
 
 const App = () => {
-  return <RouterProvider router={router} />;
+  return (
+    <>
+      <Toaster />
+      <RouterProvider router={router} />
+    </>
+  );
 };
 
 export default App;

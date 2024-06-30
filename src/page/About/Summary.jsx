@@ -36,7 +36,7 @@ export default function Summary() {
                 effect="blur"
                 src={Profile}
                 alt="profile.jpg"
-                className="h-72 w-full rounded-2xl object-cover shadow-2xl shadow-violet-700 lg:h-[29rem]"
+                className="h-56 w-full rounded-2xl object-cover shadow-2xl shadow-violet-700 lg:h-[29rem]"
               />
             </motion.div>
           </AnimateContainer>
@@ -68,12 +68,16 @@ export default function Summary() {
               >
                 I'm an Informatics Student majoring at Universitas Atma Jaya
                 Yogyakarta who is dynamic, self-motivated, and strongly
-                interested in Full Stack Development and Content Creation. I
-                have a passion for exploring new technologies and possess an
-                independent mindset and critical thinking skills to tackle
-                challenges effectively. I am dedicated to delivering positive
-                contributions to every project and my primary focus is on web
-                development.
+                interested in{" "}
+                <span className="font-bold text-violet-600">
+                  Full Stack Development{" "}
+                </span>{" "}
+                and{" "}
+                <span className="font-bold text-violet-600">
+                  Content Creation{" "}
+                </span>
+                . I am dedicated to delivering positive contributions to every
+                project and my primary focus is on web development.
               </motion.p>
             </AnimateContainer>
           </div>
@@ -81,21 +85,27 @@ export default function Summary() {
             {...HorizontalPanLeft}
             className="flex justify-start gap-x-6 pt-6"
           >
-            <NavLink to="https://www.instagram.com/dendypramartha_">
+            <NavLink
+              to="https://www.instagram.com/dendypramartha_"
+              target="_blank"
+            >
               <FontAwesomeIcon
                 icon={faInstagramSquare}
                 size="2x"
                 className="text-violet-500 hover:text-violet-400"
               />
             </NavLink>
-            <NavLink to="https://www.linkedin.com/in/dendypramartha">
+            <NavLink
+              to="https://www.linkedin.com/in/dendypramartha"
+              target="_blank"
+            >
               <FontAwesomeIcon
                 icon={faLinkedin}
                 size="2x"
                 className="text-violet-500 hover:text-violet-400"
               />
             </NavLink>
-            <NavLink to="https://github.com/JoyB00">
+            <NavLink to="https://github.com/JoyB00" target="_blank">
               <FontAwesomeIcon
                 icon={faGithub}
                 size="2x"

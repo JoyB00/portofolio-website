@@ -1,17 +1,18 @@
-export default function TextArea({ label, id, type }) {
+export default function TextArea({ label, id, ...props }) {
   return (
-    <div class="mb-4">
+    <div className="mb-4">
       <label
-        class="mb-2 block text-start text-sm font-bold text-gray-700"
-        for={id}
+        className="mb-2 block text-start text-sm font-bold text-gray-700"
+        htmlFor={id}
       >
         {label}
       </label>
       <textarea
-        class="focus:shadow-outline w-full appearance-none rounded-2xl border bg-black px-5 py-4 leading-tight text-white shadow focus:outline-none"
+        className="focus:shadow-outline w-full appearance-none rounded-2xl border bg-black px-5 py-4 leading-tight text-white shadow focus:outline-none"
         rows="5"
         id={id}
         name={id}
+        {...props}
       />
     </div>
   );

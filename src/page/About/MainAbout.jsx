@@ -3,7 +3,7 @@ import Navbar from "../../component/Navbar";
 import Footer from "../../component/Footer";
 import EmailMe from "../../component/EmailMe";
 import SkillsSection from "./SkillsSection";
-import OverlayVid from "../../assets/overlay.mp4";
+import OverlayVid from "../../assets/new_overlay.mp4";
 
 export default function MainAbout() {
   return (

@@ -5,7 +5,7 @@ export default function IconComponent({ icon, title }) {
         <img
           src={icon}
           alt={title}
-          className="mx-auto h-12 w-12 object-cover p-2 lg:h-16 lg:w-16"
+          className="mx-auto h-12 object-cover p-2 lg:h-16"
         />
         <h1 className="px-2 text-sm font-semibold text-violet-300 lg:px-4 lg:text-xl">
           {title}

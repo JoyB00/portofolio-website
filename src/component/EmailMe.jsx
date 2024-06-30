@@ -13,7 +13,7 @@ export default function EmailMe() {
   const [showArrow, setShowArrow] = useState(false);
   return (
     <AnimateContainer>
-      <div className="mt-24 text-start lg:mx-52">
+      <div className="mb-24 mt-24 text-start lg:mx-52">
         <motion.p
           variants={VerticalPanUP}
           className="font-semibold text-violet-500"
