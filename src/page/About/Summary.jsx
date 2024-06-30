@@ -66,14 +66,14 @@ export default function Summary() {
                 variants={VerticalPanUP}
                 className="text-xs font-medium text-violet-200 lg:text-sm"
               >
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius
-                veritatis ipsa nulla hic recusandae, inventore dolorum impedit!
-                Praesentium ad natus adipisci, repudiandae esse, deserunt
-                cupiditate dolores, labore sequi aut consequuntur! Consectetur
-                architecto autem maiores molestiae delectus esse, quia tenetur
-                iure porro excepturi officiis earum soluta numquam laboriosam
-                voluptatum molestias. Excepturi dicta molestiae vitae iusto qui
-                optio sint earum veritatis fuga.
+                I'm an Informatics Student majoring at Universitas Atma Jaya
+                Yogyakarta who is dynamic, self-motivated, and strongly
+                interested in Full Stack Development and Content Creation. I
+                have a passion for exploring new technologies and possess an
+                independent mindset and critical thinking skills to tackle
+                challenges effectively. I am dedicated to delivering positive
+                contributions to every project and my primary focus is on web
+                development.
               </motion.p>
             </AnimateContainer>
           </div>

@@ -2,6 +2,7 @@ import AnimateContainer from "../../component/AnimateContainer";
 import CardProject from "../../component/CardProject";
 import { motion } from "framer-motion";
 import { VerticalPanDown, VerticalPanUP } from "../../lib/Animation";
+import { MyProject } from "../../lib/Project";
 
 export default function ProjectSection() {
   return (
@@ -20,19 +21,19 @@ export default function ProjectSection() {
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae
           placeat voluptates similique, itaque consequatur mollitia fuga
         </motion.p>
-        <div className="grid grid-cols-1 gap-6 md:grid-cols-2 md:gap-x-6 md:gap-y-10">
-          <motion.div variants={VerticalPanUP} className="md:col-span-1">
-            <CardProject />
-          </motion.div>
-          <motion.div variants={VerticalPanUP} className="md:col-span-1">
-            <CardProject />
-          </motion.div>
-          <motion.div variants={VerticalPanUP} className="md:col-span-1">
-            <CardProject />
-          </motion.div>
-          <motion.div variants={VerticalPanUP} className="md:col-span-1">
-            <CardProject />
-          </motion.div>
+        <div className="grid grid-cols-1 gap-8 md:grid-cols-2 md:gap-x-8 md:gap-y-16">
+          {MyProject.map((item) => {
+            return (
+              <motion.div variants={VerticalPanUP} className="md:col-span-1">
+                <CardProject
+                  img={item.img}
+                  title={item.title}
+                  description={item.description}
+                  link={item.link}
+                />
+              </motion.div>
+            );
+          })}
         </div>
       </div>
     </AnimateContainer>

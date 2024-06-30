@@ -1,20 +1,39 @@
-import React from "react";
+import React, { useRef } from "react";
 import Avatar from "../../assets/avatar.png";
 import MarqueeSlider from "../../component/MarqueeSlider";
-import { motion } from "framer-motion";
+import { motion, useScroll, useTransform } from "framer-motion";
 import { Fade, VerticalPanUP } from "../../lib/Animation";
 import { VerticalPanDown } from "../../lib/Animation";
 import { NavLink } from "react-router-dom";
 import AnimateContainer from "../../component/AnimateContainer";
 const WelcomeSection = () => {
+  const ref = useRef(null);
+  const { scrollYProgress } = useScroll({
+    target: ref,
+    offset: ["start start", "end start"],
+  });
+  const nodeY = useTransform(scrollYProgress, [0, 1], ["0%", "-1000%"]);
+  console.log(scrollYProgress);
   return (
     <AnimateContainer>
-      <div className="z-10 pt-32 lg:pt-52">
+      <div className="z-10 pt-32 lg:pt-52" ref={ref}>
         <motion.div variants={VerticalPanUP} className="relative">
-          <div className="absolute top-10 h-4 w-4 rounded-full bg-gradient-to-r from-violet-500 to-fuchsia-500 lg:left-28 lg:h-9 lg:w-9"></div>
-          <div className="absolute right-4 top-0 h-3 w-3 rounded-full bg-gradient-to-r from-sky-500 to-indigo-500 lg:right-48 lg:h-7 lg:w-7"></div>
-          <div className="absolute right-4 top-[27rem] h-2 w-2 rounded-full bg-gradient-to-r from-purple-500 to-pink-500 lg:right-28 lg:h-4 lg:w-4"></div>
-          <div className="absolute top-[25rem] h-2 w-2 rounded-full bg-gradient-to-r from-yellow-500 to-orange-500 lg:left-48 lg:h-4 lg:w-4"></div>
+          <motion.div
+            style={{ y: nodeY }}
+            className="absolute top-10 h-4 w-4 rounded-full bg-gradient-to-r from-violet-500 to-fuchsia-500 lg:left-28 lg:h-9 lg:w-9"
+          ></motion.div>
+          <motion.div
+            style={{ y: nodeY }}
+            className="absolute right-4 top-0 h-3 w-3 rounded-full bg-gradient-to-r from-sky-500 to-indigo-500 lg:right-48 lg:h-7 lg:w-7"
+          ></motion.div>
+          <motion.div
+            style={{ y: nodeY }}
+            className="absolute right-4 top-[27rem] h-2 w-2 rounded-full bg-gradient-to-r from-purple-500 to-pink-500 lg:right-28 lg:h-4 lg:w-4"
+          ></motion.div>
+          <motion.div
+            style={{ y: nodeY }}
+            className="absolute top-[25rem] h-2 w-2 rounded-full bg-gradient-to-r from-yellow-500 to-orange-500 lg:left-48 lg:h-4 lg:w-4"
+          ></motion.div>
         </motion.div>
         <div className="mb-8 flex justify-center">
           <motion.div
@@ -44,10 +63,10 @@ const WelcomeSection = () => {
           </motion.h1>
           <motion.p
             variants={VerticalPanUP}
-            className="mt-8 text-violet-200 opacity-70"
+            className="mt-8 text-xs text-violet-200 opacity-70 lg:text-lg"
           >
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur
-            minima expedita reiciendis
+            "Welcome to my portfolio website. Let's collaborate on a project
+            together!"
           </motion.p>
         </div>
         <NavLink to="/about">

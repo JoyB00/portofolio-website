@@ -20,6 +20,7 @@ import After_Effect from "../assets/techStack/After_Effect.svg";
 import Premiere_Pro from "../assets/techStack/Premiere_Pro.svg";
 import Github from "../assets/techStack/Github.png";
 import Lightroom from "../assets/techStack/Lightroom.svg";
+import React_logo from "../assets/techStack/React.png";
 const MySkills = [
   {
     icon: C,
@@ -36,6 +37,18 @@ const MySkills = [
   {
     icon: PHP,
     title: "PHP",
+  },
+  {
+    icon: HTML,
+    title: "HTML",
+  },
+  {
+    icon: CSS3,
+    title: "CSS",
+  },
+  {
+    icon: React_logo,
+    title: "React",
   },
   {
     icon: Dart,
@@ -56,14 +69,6 @@ const MySkills = [
   {
     icon: Laravel,
     title: "Laravel",
-  },
-  {
-    icon: HTML,
-    title: "HTML",
-  },
-  {
-    icon: CSS3,
-    title: "CSS",
   },
   {
     icon: MySQL,
@@ -121,6 +126,18 @@ const ForProgramming = [
     title: "PHP",
   },
   {
+    icon: HTML,
+    title: "HTML",
+  },
+  {
+    icon: CSS3,
+    title: "CSS",
+  },
+  {
+    icon: React_logo,
+    title: "React",
+  },
+  {
     icon: Dart,
     title: "Dart",
   },
@@ -139,14 +156,6 @@ const ForProgramming = [
   {
     icon: Laravel,
     title: "Laravel",
-  },
-  {
-    icon: HTML,
-    title: "HTML",
-  },
-  {
-    icon: CSS3,
-    title: "CSS",
   },
   {
     icon: MySQL,
