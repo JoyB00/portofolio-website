@@ -8,7 +8,7 @@ export default function TextArea({ label, id, type }) {
         {label}
       </label>
       <textarea
-        class="focus:shadow-outline w-full appearance-none rounded-2xl border px-5 py-4 leading-tight text-white shadow focus:outline-none"
+        class="focus:shadow-outline w-full appearance-none rounded-2xl border bg-black px-5 py-4 leading-tight text-white shadow focus:outline-none"
         rows="5"
         id={id}
         name={id}
