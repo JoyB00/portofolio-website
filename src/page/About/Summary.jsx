@@ -12,13 +12,13 @@ import { VerticalPanDown } from "../../lib/Animation";
 import { VerticalPanUP } from "../../lib/Animation";
 import { HorizontalPanLeft } from "../../lib/Animation";
 import AnimateContainer from "../../component/AnimateContainer";
-import CV from "../../assets/techStack/BLANGKO PIKET.pdf";
+import CV from "../../assets/techStack/I Kadek Dendy Pramartha-FullStack Web Development.pdf";
 export default function Summary() {
   const onButtonClick = () => {
     const pdfUrl = CV;
     const link = document.createElement("a");
     link.href = pdfUrl;
-    link.download = "BLANGKO PIKET.pdf"; // specify the filename
+    link.download = "I Kadek Dendy Pramartha-FullStack Web Development.pdf"; // specify the filename
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
