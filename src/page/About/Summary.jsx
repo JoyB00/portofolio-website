@@ -18,7 +18,7 @@ export default function Summary() {
     const pdfUrl = CV;
     const link = document.createElement("a");
     link.href = pdfUrl;
-    link.download = "I Kadek Dendy Pramartha-FullStack Web Development.pdf"; // specify the filename
+    link.download = "I Kadek Dendy Pramartha-CV.pdf"; // specify the filename
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
