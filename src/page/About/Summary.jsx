@@ -12,7 +12,7 @@ import { VerticalPanDown } from "../../lib/Animation";
 import { VerticalPanUP } from "../../lib/Animation";
 import { HorizontalPanLeft } from "../../lib/Animation";
 import AnimateContainer from "../../component/AnimateContainer";
-import CV from "../../assets/techStack/I Kadek Dendy Pramartha-FullStack Web Development.pdf";
+import CV from "../../assets/techStack/I Kadek Dendy Pramartha-CV.pdf";
 export default function Summary() {
   const onButtonClick = () => {
     const pdfUrl = CV;
