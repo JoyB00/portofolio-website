@@ -4,6 +4,10 @@ import Javascript from "../assets/techStack/Javascript.png";
 import HTML from "../assets/techStack/HTML.svg";
 import CSS3 from "../assets/techStack/CSS.svg";
 import C from "../assets/techStack/C.png";
+import CSharp from "../assets/techStack/cSharp.png";
+import dotnet from "../assets/techStack/dotnet.png";
+import springboot from "../assets/techStack/springboot.png";
+import postgresql from "../assets/techStack/postgresql.png";
 import Figma from "../assets/techStack/Figma.svg";
 import Flutter from "../assets/techStack/Flutter.png";
 import Tailwind from "../assets/techStack/Tailwind.png";
@@ -25,6 +29,22 @@ const MySkills = [
   {
     icon: C,
     title: "C",
+  },
+  {
+    icon: CSharp,
+    title: "C#",
+  },
+  {
+    icon: dotnet,
+    title: ".NET",
+  },
+  {
+    icon: postgresql,
+    title: "PostgreSQL",
+  },
+  {
+    icon: springboot,
+    title: "SpringBoot",
   },
   {
     icon: Java,
@@ -112,6 +132,22 @@ const ForProgramming = [
   {
     icon: C,
     title: "C",
+  },
+  {
+    icon: CSharp,
+    title: "C#",
+  },
+  {
+    icon: dotnet,
+    title: ".NET",
+  },
+  {
+    icon: postgresql,
+    title: "PostgreSQL",
+  },
+  {
+    icon: springboot,
+    title: "SpringBoot",
   },
   {
     icon: Java,

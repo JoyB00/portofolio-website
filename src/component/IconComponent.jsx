@@ -7,7 +7,7 @@ export default function IconComponent({ icon, title }) {
           alt={title}
           className="mx-auto h-12 object-cover p-2 lg:h-16"
         />
-        <h1 className="px-2 text-sm font-semibold text-violet-300 lg:px-4 lg:text-xl">
+        <h1 className="px-2 text-sm font-semibold text-violet-300 lg:px-4 lg:text-lg">
           {title}
         </h1>
       </div>
